@@ -1,0 +1,21 @@
+---
+title: "Data Science for Public Policy"
+subtitle: "Assignment XX"
+author: "Name - NetID"
+execute:
+  warning: false
+format:
+  html:
+    embed-resources: true
+---
+
+## storms
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+storms %>% 
+  ggplot()+
+  geom_bar(aes(x=category))
+```
+
